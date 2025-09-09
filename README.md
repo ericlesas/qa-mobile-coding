@@ -76,4 +76,3 @@ npx wdio run wdio.conf.js
    *  Add more reusable wait methods for screen transitions.
    *  Add timeout handling with messages for elements that are not displayed.
    *  Add a test report like Allure Report.
-   *  Run tests on a device farm.
