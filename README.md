@@ -65,7 +65,7 @@ npx wdio run wdio.conf.js
 | Validates login in the app with invalid credentials   | validateLoginWithErrors.test.js  |
 | Validates login in the app with username field empty  | validateLoginWithErrors.test.js  |
 | Validates login in the app with password field empty  | validateLoginWithErrors.test.js  |
-| Login with Empty Password                             | validateLoginWithSuccess.test.js |
+| Logs into the app with valid credentials              | validateLoginWithSuccess.test.js |
 | Add Product to Cart and Navigate to Cart              | validateProductPurchase.test.js  |
 
 ---
