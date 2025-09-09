@@ -1,4 +1,4 @@
-# QA Mobile Coding Challenge - Betsson
+# QA Mobile Coding - SwagLabs
 
 ## 📱 Project Overview
 
@@ -11,7 +11,7 @@ It implements core mobile automation principles such as **Page Object Model (POM
 ## 🗂 Project Structure
 
 ```
-qa-mobile-coding-challenge-betsson/
+qa-mobile-coding/
 ├── data/
 │   ├── checkout.data.js         # Test data (form values, success messages)
 │   ├── home.data.js             # Test data (list of products)
@@ -27,7 +27,8 @@ qa-mobile-coding-challenge-betsson/
 │   ├── login/                   # Login related tests
 │   ├── checkout/                # Checkout related tests
 │   └── product/                 # Product related tests
-├── wdio.conf.js                 # WebdriverIO configuration (assumed)
+├── wdio.browserstack.android.js # WebdriverIO configuration for device farm run
+├── wdio.local.conf.js           # WebdriverIO configuration for local run
 ├── package.json
 └── README.md                    # Project documentation (this file)
 ```

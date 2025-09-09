@@ -4,7 +4,7 @@ import { assert } from 'chai'
 
 describe('Performs login in the application', async () => {
 
-    it('logs into the app with valid credentials', async () => {
+    it('Validate login the app with valid credentials', async () => {
         await loginScreen.doLoginWithAutoFill()
         assert.isTrue(await homeScreen.isDisplayedImgSwagLabsLogo(), 'Login attemp failed')
     })

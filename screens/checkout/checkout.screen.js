@@ -7,7 +7,7 @@ class CheckoutScreen extends BaseScreen {
     get inpLastName() { return $('~test-Last Name') }
     get inpZipCode() { return $('~test-Zip/Postal Code') }
 
-    // Checkout Confirmation — Buttons shown to proced with the purchase
+    // Checkout Confirmation — Buttons shown to proceed with the purchase
     get btnContinue() { return $('~test-CONTINUE') }
     get btnFinish() { return $('~test-FINISH') }
 

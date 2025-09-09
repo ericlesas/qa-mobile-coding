@@ -8,7 +8,7 @@ import { assert } from 'chai'
 
 describe('Validate product purchase flow', async () => {
 
-    it('should complete a product purchase successfully', async () => {
+    it('Validates successful product purchase', async () => {
         await loginScreen.doLoginWithAutoFill()
         await homeScreen.addProductToCartAndNavigateToCart(homeData.listOfProducts.sauceLabsBackpack)
         await cartScreen.clickBtnCheckout()
