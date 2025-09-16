@@ -1,0 +1,28 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+        - name: ⬇️ Checkout Code
+          uses: actions/checkout@v3
+
+        - name: 🐢 Setup Node 
+          uses: actions/setup-node@v3
+          with:
+            node-version: 18
+
+        - name: 🏗️ Install Dependencies
+          run: npm install
+
+        - name: 🧪 Run tests on BrowserStack
+          env:
+            BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+            BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+            BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
+          run: npx wdio wdio.browserstack.android.js
