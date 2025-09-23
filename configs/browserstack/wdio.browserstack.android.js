@@ -10,7 +10,7 @@ export const config = {
     protocol: 'https',
 
     specs: [
-        './tests/**/*.js'
+        '../../tests/**/*.js'
     ],
 
     maxInstances: 1,
